@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container justify-content-md-center" style="margin-left: 25%">
+    <form action="/palettes" method="post" enctype="multipart/form-data">
+        <label class="text-white" style="padding: 15% 0 2%; font-size:50px">Upload Files</label>
+
+        <div class="form-group">
+            <label class="text-white" style="font-size:20px">Upload Files to Generate Gradient for, (max 10 files allowed)</label>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group files">
+                        <input type="file" class="form-control" name="file" accept="image/*" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Upload" class="form-group">
+    </form>
+</div>
+{% endblock %}
