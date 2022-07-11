@@ -1,7 +1,8 @@
-from flask import Flask, request, render_template
-from colorthief import ColorThief
 from os.path import join as os_join
+
+from colorthief import ColorThief
 from werkzeug.utils import secure_filename
+from flask import Flask, request, render_template
 
 
 app = Flask(__name__)
